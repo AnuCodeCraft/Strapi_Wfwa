@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "Category"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "category": {
+      "type": "string",
+      "unique": true
+    },
+    "media": {
+      "collection": "media",
+      "via": "categories",
+      "dominant": true
+    },
+    "news": {
+      "collection": "news",
+      "via": "categories",
+      "dominant": true
+    },
+    "reports": {
+      "collection": "reports",
+      "via": "categories",
+      "dominant": true
+    }
+  
+  }
+}
