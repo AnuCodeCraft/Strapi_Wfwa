@@ -13,13 +13,13 @@
   "attributes": {
     "title": {
       "type": "string",
-      "required": true,
-      "unique": true
+      "required": true
+      
     },
-    "blogContent": {
+    "Content": {
       "type": "richtext",
-      "required": true,
-      "unique": true
+      "required": true
+      
     },
     "featureImage": {
       "model": "file",
@@ -29,7 +29,7 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": false,
+      "required": true,
       "pluginOptions": {}
     },
     "categories": {

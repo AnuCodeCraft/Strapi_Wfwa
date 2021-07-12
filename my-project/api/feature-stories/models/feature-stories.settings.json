@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "news",
+  "collectionName": "feature_stories_s",
   "info": {
-    "name": "News"
+    "name": "FeatureStories "
   },
   "options": {
     "increments": true,
@@ -14,15 +14,13 @@
     "title": {
       "type": "string",
       "required": true
-      
     },
-    "Content": {
+    "content": {
       "type": "richtext",
       "required": true
-      
     },
-    "featureImage": {
-      "model": "file",
+    "media": {
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -32,9 +30,13 @@
       "required": true,
       "pluginOptions": {}
     },
-    "categories": {
-      "via": "news",
-      "collection": "category"
+    "dateandtime": {
+      "type": "datetime",
+      "required": true
+    },
+    "category": {
+      "model": "category",
+      "via": "feature_stories"
     }
   }
 }

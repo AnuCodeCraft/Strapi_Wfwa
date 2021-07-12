@@ -29,7 +29,10 @@
       "collection": "reports",
       "via": "categories",
       "dominant": true
+    },
+    "feature_stories": {
+      "via": "category",
+      "collection": "feature-stories"
     }
-  
   }
 }

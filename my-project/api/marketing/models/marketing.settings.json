@@ -1,8 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "news",
+  "collectionName": "marketing",
   "info": {
-    "name": "News"
+    "name":"Marketing",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -31,10 +32,7 @@
       "plugin": "upload",
       "required": true,
       "pluginOptions": {}
-    },
-    "categories": {
-      "via": "news",
-      "collection": "category"
     }
+   
   }
 }
